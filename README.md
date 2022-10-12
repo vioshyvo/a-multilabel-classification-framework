@@ -1,6 +1,7 @@
 
-# A Multilabel Framework for Approximate Nearest Neighbor Search
+# A Multilabel Classification Framework for Approximate Nearest Neighbor Search
 
+This article contains the code used to produce the experimental results of the article "A Multilabel Classification Framework for Approximate Nearest Neighbor Search" that is published in NeurIPS 2022.
 
 ## Requirements
 
