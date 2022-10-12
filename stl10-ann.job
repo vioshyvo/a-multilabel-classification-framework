@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name=stl10-ann
+#SBATCH -o stl10-ann-result.txt
+#SBATCH -c 56
+#SBATCH -t 06-00:00:00
+#SBATCH --mem=20G
+#SBATCH -p long
+
+srun comparison-ann.sh stl10 "$SLURM_JOB_ID"

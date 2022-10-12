@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name=random2_sd1
+#SBATCH -o random2_sd1-result.txt
+#SBATCH -c 56
+#SBATCH -t 01-00:00:00
+#SBATCH --mem=10G
+#SBATCH -p short
+
+srun comparison.sh random2_sd1 "$SLURM_JOB_ID"

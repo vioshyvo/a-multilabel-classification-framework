@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH --job-name=get_data
+#SBATCH -o get_data-result.txt
+#SBATCH -c 10
+#SBATCH -t 12:00:00
+#SBATCH --mem=50G
+
+srun get_data.sh

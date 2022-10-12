@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name=gist-small
+#SBATCH -o gist-small-result.txt
+#SBATCH -c 56
+#SBATCH -t 03-00:00:00
+#SBATCH --mem=30G
+#SBATCH -p long
+
+srun comparison.sh gist-small "$SLURM_JOB_ID"

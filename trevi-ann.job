@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name=trevi-ann
+#SBATCH -o trevi-ann-result.txt
+#SBATCH -c 56
+#SBATCH -t 05-00:00:00
+#SBATCH --mem=20G
+#SBATCH -p long
+
+srun comparison-ann.sh trevi "$SLURM_JOB_ID"
